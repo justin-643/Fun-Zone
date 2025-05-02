@@ -1,0 +1,66 @@
+.container-frame {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9fb;
+    min-height: 100vh;
+  }
+  
+  .header-frame {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .button-frame {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-frame:hover {
+    background-color: #5a4bdc;
+  }
+  
+  .surprise-frame {
+    margin-top: 40px;
+    font-size: 1.5em;
+    color: #ff69b4;
+    animation: fadeIn-frame 1s ease forwards;
+  }
+  
+  @keyframes fadeIn-frame {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .video-grid-frame {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  
+  .video-box-frame {
+    border: 3px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-box-frame:hover {
+    transform: scale(1.02);
+  }
+  
+  .video-box-frame iframe {
+    width: 100%;
+    height: 200px;
+  }
+  
